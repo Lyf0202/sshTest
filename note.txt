@@ -1,0 +1,16 @@
+springmvc + spring + hibernate 框架整合
+
+1.创建工程，拷贝所需jar
+先整合spring + hibernate
+
+2.配置C3P0数据源
+
+
+
+
+
+7.如果需要单元测试必须添加<context:component-scan base-package="com"/>扫描器，因为使用的是注解
+而且DAO需要注入SessionFactory 所以需要添加一个全局的default-autowire="byName" bean主动装配
+
+配置springmvc
+8.先配置web.xml 配置前置控制器是一个Servlet （）

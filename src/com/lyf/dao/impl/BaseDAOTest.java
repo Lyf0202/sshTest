@@ -15,4 +15,6 @@ public class BaseDAOTest extends BaseDAOImpl {
 		System.out.println("getSession().save(userInfo);....");
 		getSession().save(userInfo);
 	}
+	
+	
 }

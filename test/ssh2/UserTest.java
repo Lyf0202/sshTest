@@ -19,9 +19,21 @@ public class UserTest {
 	}
 
 	@Test
+	public void get(){
+		UserInfo user = null;
+		try {
+			user = userInfoService.getUser(2);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println(user);
+	}
+	
+	@Test
 	public void add() {
 
-		UserInfo user = new UserInfo(77, "wangwu");
+		UserInfo user = new UserInfo(888, "梁焱烽");
 
 		try {
 			userInfoService.add(user);

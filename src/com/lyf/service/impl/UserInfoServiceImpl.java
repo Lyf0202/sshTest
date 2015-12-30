@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.lyf.dao.UserInfoDAO;
+import com.lyf.dao.impl.BaseDAOTest;
 import com.lyf.po.UserInfo;
 import com.lyf.service.UserInfoService;
 
@@ -21,11 +22,13 @@ public class UserInfoServiceImpl implements UserInfoService {
 	@Autowired
 	private UserInfoDAO userDao;
 
+	@Autowired
+	private BaseDAOTest basedaotest;
 	@Override
 	public void add(UserInfo user) throws Exception {
 
 		if (user != null) {
-			userDao.add(user);
+			basedaotest.add(user);
 		}
 	}
 

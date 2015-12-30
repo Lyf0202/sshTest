@@ -21,7 +21,7 @@ public class UserTest {
 	@Test
 	public void add() {
 
-		UserInfo user = new UserInfo(90, "张三");
+		UserInfo user = new UserInfo(77, "wangwu");
 
 		try {
 			userInfoService.add(user);

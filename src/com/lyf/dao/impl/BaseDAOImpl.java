@@ -11,6 +11,14 @@ public class BaseDAOImpl {
 	@Autowired
 	private SessionFactory sessionFactory;
 	
+	
+	
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+
+
+
 	public Session getSession(){
 		return this.sessionFactory.getCurrentSession();
 	}

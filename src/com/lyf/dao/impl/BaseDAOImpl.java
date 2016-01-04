@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class BaseDAOImpl {
 
-	@Autowired
+	@Autowired 
 	private SessionFactory sessionFactory;
 	
 	
